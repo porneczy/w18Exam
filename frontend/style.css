@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: inherit;
+}
+a{
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+
+button,
+a {
+    cursor: pointer;
+    color: inherit;
+}
+
+textarea {
+    resize: none;
+}
+
+button,
+textarea,
+select {
+    appearance: none !important;
+    border-radius: 0;
+}
+/*END OF CSS RESET*/
+
+/* primary color: #ffeedf
+  secondary color: #145434 */
+
+body{
+    background-color: #ffeedf;
+    font-family: 'Space Grotesk', sans-serif;
+}
+.header{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffeedf;
+    color: #145434;
+    border-bottom: 1px solid #145434;
+    font-size: 36px;
+    z-index: 10;
+    padding: 5px;
+}
+.material-symbols-outlined{
+    font-size: 36px;
+}
+#main{
+    margin: 0 50px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-column-gap: 60px;
+    grid-row-gap: 60px;
+    justify-content: center;
+    padding-top: 150px;
+    margin-bottom: 70px;
+}
+@media screen and (max-width: 910px) {
+    #main{
+        grid-template-columns: auto;
+        grid-column-gap: 100px;
+    }
+}
+.card{
+    position: relative;
+    gap: 60px;
+    background-color: #145434;
+    color: #ffeedf;
+    max-width: 400px;
+    padding: 40px;
+    text-align: left;
+    
+    
+}
+
+.numCirlce{
+    position: absolute;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    background-color: #ffeedf;
+    color: #145434;
+    border: solid 2px #145434;
+    text-align: center;
+    left: -22px;
+    top: -22px;
+    transform: translate(2px, 2px);
+    padding-top: 2px;
+}
+.title{
+    font-size: 36px;
+    font-weight: 400;
+    
+    border-bottom: 1px solid #ffeedf;
+    min-height: 100px;
+}
+.sub{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.text{
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+.detBtn{
+    position: absolute;
+    right: -10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background-color: #ffeedf;
+    color: #145434;
+    border: solid 2px #145434;
+    padding-right: 10px;
+}
+.detBtn:hover{
+    background-color: #145434;
+    border: solid 2px #ffeedf;
+    color: #ffeedf;
+}
+.arrow{
+    padding-left: 30px;
+}
