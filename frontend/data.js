@@ -52,7 +52,7 @@ const beers = {
 			title: "All the Leaves are Brown",
 			sub: "Tempest Brewing Company",
 			text: "Brown Ale - American"
-		},
+		}
 	]
 }
 console.log(beers);

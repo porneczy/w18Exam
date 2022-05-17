@@ -65,12 +65,6 @@ body{
     padding-top: 150px;
     margin-bottom: 70px;
 }
-@media screen and (max-width: 910px) {
-    #main{
-        grid-template-columns: auto;
-        grid-column-gap: 100px;
-    }
-}
 .card{
     position: relative;
     gap: 60px;
@@ -79,10 +73,7 @@ body{
     max-width: 400px;
     padding: 40px;
     text-align: left;
-    
-    
 }
-
 .numCirlce{
     position: absolute;
     border-radius: 50%;
@@ -135,4 +126,12 @@ body{
 }
 .arrow{
     padding-left: 30px;
+}
+
+
+@media screen and (max-width: 910px) {
+    #main{
+        grid-template-columns: auto;
+        grid-column-gap: 100px;
+    }
 }

@@ -3,12 +3,13 @@ const headerComponent = `
         <h3>Best Beers</h3>
         <button class="material-symbols-outlined">menu</button>
     </header>
+    
 `
 const mainComponent = `<div id="main"></div>`
 
-const cardComponent = (title, sub, text, index) => `
+const cardComponent = ({title, sub, text}, index) => `
     <div class="card">
-        <div class="numCirlce">${index+1}</div>
+        <div class="numCirlce">${index + 1}</div>
         <p class="title">${title}</p>
         <p class="sub">${sub}</p>
         <p class="text">${text}</p>
@@ -25,9 +26,11 @@ window.addEventListener("load", () => {
     rootElement.insertAdjacentHTML("beforeend", headerComponent)
     rootElement.insertAdjacentHTML("beforeend", mainComponent)
     const main = document.getElementById("main")
+    const cards = beers.cards.map((card, index) => cardComponent(card, index)).join("") // ez a join kell a "," szarság kiküszöböléséhez
+    console.log(cards)
+    main.insertAdjacentHTML("beforeend", cards) 
+    
 
-    main.insertAdjacentHTML("beforeend", beers.cards.map((card, index) => {
-        return cardComponent(card.title, card.sub, card.text, index)
-    }))
+    
 })
 
